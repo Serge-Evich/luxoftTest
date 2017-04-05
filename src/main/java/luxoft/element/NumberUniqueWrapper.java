@@ -18,7 +18,7 @@ public class NumberUniqueWrapper {
     }
 
     public int hashCode() {
-        return this.element.getNumber();
+        return 31 * this.element.getNumber();
     }
 
     @Override
