@@ -20,7 +20,12 @@ public class ElementCollectionTestCase {
             }
 
         };
-        List<Element> elements = Arrays.asList( new Element( 29, "name", 21 ), new Element( 29, "name", 21 ) );
+        List<Element> elements = Arrays.asList(
+                new Element( 29, "name", 21 ),
+                new Element( 29, "name_1", 22 ),
+                new Element( 29, "name_2", 23 ),
+                new Element( 29, "name_3", 24 )
+        );
         Collection<Element> resultCollection = Element.getUniqueByNumber( elements, emptyPredicate );
         assertThat( resultCollection.size(), is( 1 ) );
     }
