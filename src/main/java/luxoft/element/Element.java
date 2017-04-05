@@ -47,9 +47,9 @@ public class Element {
     ) {
         return collection.stream()
                 .filter( predicate )
-                .map( element -> new NumberUniqueWrapper( element ) )
+                .map( element -> new ElementNumberUniqueWrapper( element ) )
                 .distinct()
-                .map( NumberUniqueWrapper::getElement )
+                .map( ElementNumberUniqueWrapper::getElement )
                 .collect(Collectors.toList());
     }
 }

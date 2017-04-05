@@ -1,11 +1,11 @@
 package luxoft.element;
 
 
-public class NumberUniqueWrapper {
+public class ElementNumberUniqueWrapper {
 
     private Element element;
 
-    public NumberUniqueWrapper( Element element ) {
+    public ElementNumberUniqueWrapper(Element element ) {
         this.element = element;
     }
 
@@ -26,7 +26,7 @@ public class NumberUniqueWrapper {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        NumberUniqueWrapper that = (NumberUniqueWrapper) o;
+        ElementNumberUniqueWrapper that = (ElementNumberUniqueWrapper) o;
 
         return getElement().getNumber() == that.getElement().getNumber();
 
