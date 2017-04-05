@@ -41,11 +41,6 @@ public class Element {
         this.age = age;
     }
 
-    @Override
-    public int hashCode() {
-        return 31 * number;
-    }
-
     public static Collection<Element> getUniqueByNumber(
             Collection<Element> collection,
             Predicate<Element> predicate
